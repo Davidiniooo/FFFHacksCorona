@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  </head>
+  <body>
+
+    <h2>Login Form</h2>
+
+    <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Register</button>
+    <button onclick="document.getElementById('id03').style.display='block'" style="width:auto;">Login</button>
+    <button onclick="document.getElementById('id02').style.display='block'" style="width:auto;">Add entry</button>
+
+    <!--Registration Form-->
+
+    <div id="id01" class="modal">
+
+      <form class="modal-content animate">
+
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+
+          <label for="uname"><b>Benutzer</b></label>
+          <input type="text" placeholder="Benutzername" name="uname" required>
+
+          <label for="plz"><b>PLZ</b></label>
+          <input type="text" placeholder="PLZ" name="plz" min=5 max=5 required>
+
+          <label for="mail"><b>E-Mail</b></label>
+          <input type="email" placeholder="Mailadresse" name="mail" required>
+
+          <label for="pwd"><b>Passwort</b></label>
+          <input type="password" placeholder="Passwort" name="pwd" required>
+
+          <button type="submit">Register</button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="document.getElementById('id01').style.display='none';document.getElementById('id03').style.display='block';" class="switchbtn">Sign in</button>
+        </div>
+      </form>
+    </div>
+    <script src="login.js"></script>
+
+
+    <!--id02 container for to add a new entry-->
+    <div id="id02" class="modal">
+      <form class="modal-content animate" action="/action_page.php" methd="post">
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id02').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+        <div class="container">
+
+          <label for="need"><b>Nachfrage</b></label>
+          <input type="text" placeholder="Was benötigen sie?" name="need" required>
+
+          <label for="offer"><b>Angebot</b></label>
+          <input type="text" placeholder="Was bieten sie an?" name="offer" required>
+
+          <button type="submit">Finish</button>
+
+          <div class="container" style="background-color:#f1f1f1">
+            <button type="button" onclick="document.getElementById('id02').style.display='none'" class="cancelbtn">Cancel</button>
+          </div>
+
+        </div>
+      </form>
+    </div>
+
+    <script src="login.js"></script>
+
+    <!--Login Form-->
+
+    <div id="id03" class="modal">
+
+      <form class="modal-content animate">
+
+        <div class="imgcontainer">
+          <span onclick="document.getElementById('id03').style.display='none'" class="close" title="Close Modal">&times;</span>
+        </div>
+
+        <div class="container">
+
+          <label for="uname"><b>Benutzer</b></label>
+          <input type="text" placeholder="Benutzername" name="uname" required>
+
+          <label for="pwd"><b>Passwort</b></label>
+          <input type="password" placeholder="Passwort" name="pwd" required>
+
+          <button type="submit">Login</button>
+
+          <label>
+            <input type="checkbox" checked="checked" name="remember"> Remember me
+          </label>
+        </div>
+
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+          <button type="button" onclick="document.getElementById('id03').style.display='none';document.getElementById('id01').style.display='block';" class="switchbtn">Sign up</button>
+          <span class="psw">Forgot <a href="#">password?</a></span>
+        </div>
+      </form>
+    </div>
+    <script src="login.js"></script>
+
+  </body>
+</html>
