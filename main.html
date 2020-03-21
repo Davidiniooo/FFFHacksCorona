@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+
+<h2>Modal Login Form</h2>
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</button>
+
+<div id="id01" class="modal">
+
+  <form class="modal-content animate" action="/action_page.php" method="post">
+
+    <div class="imgcontainer">
+      <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+    </div>
+
+    <div class="container">
+      <label for="fname"><b>Vorname</b></label>
+      <input type="text" placeholder="Vorname" name="fname" required>
+
+      <label for="lname"><b>Nachname</b></label>
+      <input type="text" placeholder="Nachname" name="lname" required>
+
+      <label for="plz"><b>PLZ</b></label>
+      <input type="text" placeholder="PLZ" name="plz" min=5 max=5 required>
+
+      <label for="mail"><b>E-Mail</b></label>
+      <input type="email" placeholder="Mailadresse" name="mail" required>
+
+      <button type="submit">Login</button>
+      <label>
+        <input type="checkbox" checked="checked" name="remember"> Remember me
+      </label>
+    </div>
+
+    <div class="container" style="background-color:#f1f1f1">
+      <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+      <span class="psw">Forgot <a href="#">password?</a></span>
+    </div>
+  </form>
+</div>
+
+<script src="login.js"></script>
+</body>
