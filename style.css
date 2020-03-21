@@ -1,0 +1,229 @@
+/*
+// Stylesheet (c) 2020 //
+*/
+
+/*
+// Import Schriften //
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca&family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Quicksand:wght@300;400;500;600;700&display=swap');
+
+/*
+// Allgemeine Styles //
+*/
+
+
+
+
+
+/*
+// Fuer mich //
+*/
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #E8E8E8;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #BFBFBF;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #5395FF;
+}
+
+
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+
+div.main {
+  width: 100%;
+  box-sizing: content-box;
+  height: auto;
+}
+div.header {
+  width: 100%;
+  height: 75px;
+  background-color: #fff;
+  transition-duration: .3s;
+  -webkit-box-shadow: 0px 0px 0px 1px rgba(203,203,203,1);
+-moz-box-shadow: 0px 0px 0px 1px rgba(203,203,203,1);
+box-shadow: 0px 0px 0px 1px rgba(203,203,203,1);
+position: fixed;
+z-index: 501;
+}
+div.logo {
+  background-color: #E8E8E8;
+  width: 400px;
+  height: 90%;
+  margin-top: 5%;
+  margin: 2.5px;
+  padding: 5px;
+  border-radius: 10px;
+  box-sizing: border-box;
+  float: left;
+}
+div.nav {
+  float: right;
+  padding: 10px;
+}
+a {
+  line-height: 55px;
+  height: 55px;
+  width: auto;
+  padding: 10px 15px;
+  text-decoration: none;
+  color: #BFBFBF;
+  border-radius: 5px;
+  transition: color .4s, box-shadow .4s;
+}
+a:not(.highlight-btn):hover {
+  color: #939393;
+}
+a.highlight-btn {
+  color: #7B7B7B;
+  border: 2px solid #5395FF;
+  background-color: #F9FBFF;
+}
+a.highlight-btn:hover {
+  color: #939393;
+  -webkit-box-shadow: 0px 0px 28px 2px rgba(83,149,255,0.21);
+-moz-box-shadow: 0px 0px 28px 2px rgba(83,149,255,0.21);
+box-shadow: 0px 0px 28px 2px rgba(83,149,255,0.21);
+}
+a.highlight-btn.incontent {
+  position: relative;
+  top: 40px;
+}
+img {
+  width: 100%;
+}
+div.content-wrapper {
+  max-width: 950px;
+  padding-top: 75px;
+  margin: 0 auto;
+}
+div.row {
+  width: 100%;
+  height: auto;
+  position: relative;
+  margin: 0 auto;
+}
+div.row:after {
+    content:"";
+    clear:both;
+    display:block;
+}
+div.row:nth-child(1) .aside:first-of-type {
+  float: left;
+  width: 60%;
+  height: 100%;
+}
+div.row:nth-child(1) .aside:last-of-type {
+  float: right;
+  width: 40%;
+  height: 100%;
+}
+div.row:nth-child(2) .aside:first-of-type {
+  float: left;
+  width: 40%;
+  height: 100%;
+}
+div.row:nth-child(2) .aside:last-of-type {
+  float: right;
+  width: 60%;
+  height: 100%;
+}
+div.row:nth-child(3) .aside:first-of-type {
+  float: left;
+  width: 50%;
+  height: 100%;
+}
+div.row:nth-child(3) .aside:last-of-type {
+  float: right;
+  width: 50%;
+  height: 100%;
+}
+div.row:nth-child(1) {
+  background-color: #fff;
+}
+div.row:nth-child(1) span.slogan-highlight {
+  font-size: 30px;
+  position: relative;
+  left: -15px;
+  top: 95px;
+  text-align: left;
+  display: block;
+  line-height: 40px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 0px 3px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 0px 3px;
+}
+div.row:nth-child(1) span.slogan-highlight b {
+  color: #5395FF;
+  text-shadow: 2px 2px 2px rgba(83,149,255,0.33);
+}
+div.row:nth-child(2) {
+  background-color: black;
+}
+div.row:nth-child(2) span.slogan-highlight {
+  color: #fff;
+  font-size: 30px;
+  position: relative;
+  right: -15px;
+  top: 145px;
+  text-align: right;
+  display: block;
+  line-height: 50px;
+}
+div.row:nth-child(2) span.slogan-highlight b {
+  color: #5395FF;
+  text-shadow: 2px 2px 2px rgba(83,149,255,0.33);
+  font-size: 30px;
+  padding: 5px;
+  border-radius: 10px;
+}
+div.row:nth-child(3) {
+  padding: 70px 0;
+}
+div.row:nth-child(3) span.slogan-highlight {
+  color: black;
+  font-size: 30px;
+  position: relative;
+  left: -15px;
+  top: 20px;
+  text-align: left;
+  display: block;
+  line-height: 50px;
+  line-height: 40px;
+  padding: 10px 15px;
+  border-radius: 10px;
+  background-color: #fff;
+  -webkit-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 0px 3px;
+      -moz-box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 0px 3px;
+      box-shadow: rgba(0, 0, 0, 0.13) 0px 2px 5px, rgba(0, 0, 0, 0.05) 0px 0px 3px;
+}
+div.row:nth-child(3) span.slogan-highlight b {
+  color: #5395FF;
+  text-shadow: 2px 2px 2px rgba(83,149,255,0.33);
+  font-size: 30px;
+}
+div.row:nth-child(4) {
+  padding: 30px 0;
+  border-top: 1px solid black;
+  text-align: center;
+}
